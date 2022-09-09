@@ -1,16 +1,11 @@
 {
   "name": "Desponsored",
   "version": "0.1.1",
-  "description": "Removing sponsoned items on skroutz.gr",
-  "permissions": ["tabs"],
-  "host_permissions": ["https://*.skroutz.gr/*"],
-  "background": {
-    "service_worker": "background.js"
-  },
+  "description": "Giving a low profile view on sponsoned items on skroutz.gr",
   "content_scripts": [
     {
       "matches": ["https://*.skroutz.gr/*"],
-      "js": ["contentScript.js"]
+      "css": ["content.css"]
     }
   ],
   "icons": {
@@ -18,15 +13,6 @@
     "32": "assets/ext-icon.png",
     "48": "assets/ext-icon.png",
     "128": "assets/ext-icon.png"
-  },
-  "action": {
-    "default_icon": {
-      "16": "assets/ext-icon.png",
-      "24": "assets/ext-icon.png",
-      "32": "assets/ext-icon.png"
-    },
-    "default_title": "Desponsored",
-    "default_popup": "popup.html"
   },
   "manifest_version": 3
 }
