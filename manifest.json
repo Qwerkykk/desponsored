@@ -1,7 +1,7 @@
 {
   "name": "Desponsored",
-  "version": "0.1.1",
-  "description": "Giving a low profile view on sponsoned items on skroutz.gr",
+  "version": "0.1.2",
+  "description": "Removing sponsoned items and search list questions on skroutz.gr",
   "content_scripts": [
     {
       "matches": ["https://*.skroutz.gr/*"],
